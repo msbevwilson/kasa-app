@@ -1,0 +1,307 @@
+.airConditioning {
+    margin: 0;
+}
+.airConditioningWiFiContainer {
+    position: absolute;
+    bottom: 33px;
+    left: 20px;
+    line-height: 142.6%;
+}
+.airConditioningWiFiKitchenWrapper {
+    width: 335px;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(246, 246, 246, 0.45);
+    height: 30px;
+    z-index: 0;
+}
+.amenities {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    line-height: 142.6%;
+    display: flex;
+    align-items: center;
+}
+.arrowBackIos24px2Icon {
+    width: 32px;
+    position: relative;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.topBar {
+    width: 335px;
+    margin: 0 !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-color: #ff6060;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0px 10px 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    font-size: 13px;
+    color: #fff;
+}
+.statusclosedSizesmall {
+    position: absolute;
+    top: 660px;
+    left: 387px;
+    border-radius: 5px;
+    width: 335px;
+    height: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.airConditioningWiFiContainer1 {
+    flex: 1;
+    position: relative;
+    line-height: 142.6%;
+}
+.airConditioningWiFiKitchenContainer {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: rgba(246, 246, 246, 0.45);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 43px 20px 19px;
+    z-index: 0;
+}
+.topBar1 {
+    width: 335px;
+    margin: 0 !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-color: #ff6060;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 6px 10px 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    font-size: 13px;
+    color: #fff;
+}
+.statusopenSizesmall {
+    position: absolute;
+    top: 661px;
+    left: 20px;
+    border-radius: 5px;
+    width: 335px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 12px;
+    color: #000;
+}
+.airConditioningWiFiContainer2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    line-height: 142.6%;
+}
+.airConditioningWiFiKitchenFrame {
+    width: 1023px;
+    position: relative;
+    border-radius: 10px 10px 5px 5px;
+    background-color: rgba(246, 246, 246, 0.45);
+    height: 52px;
+    z-index: 0;
+}
+.topBar2 {
+    width: 1023px;
+    margin: 0 !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-color: #ff6060;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px 10px 15px;
+    box-sizing: border-box;
+    z-index: 1;
+    font-size: 24px;
+    color: #fff;
+}
+.statusclosedSizelarge {
+    position: absolute;
+    top: 350px;
+    left: 1099px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.frameDiv {
+    width: 1023px;
+    border-radius: 10px 10px 5px 5px;
+    background-color: rgba(246, 246, 246, 0.45);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 70px 20px 20px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.topBar3 {
+    width: 1023px;
+    margin: 0 !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-color: #ff6060;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    z-index: 1;
+    font-size: 24px;
+    color: #fff;
+}
+.statusopenSizelarge {
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #000;
+}
+.airConditioningWiFiContainer4 {
+    position: absolute;
+    width: 94.5%;
+    bottom: 27px;
+    left: 3.44%;
+    line-height: 142.6%;
+    display: inline-block;
+}
+.airConditioningWiFiKitchenWrapper1 {
+    width: 582px;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(246, 246, 246, 0.45);
+    height: 52px;
+    z-index: 0;
+}
+.topBar4 {
+    width: 582px;
+    margin: 0 !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #ff6060;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px 10px 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    color: #fff;
+}
+.statusclosedSizemedium {
+    position: absolute;
+    top: 20px;
+    left: 651px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.airConditioningWiFiContainer5 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    line-height: 142.6%;
+    display: inline-block;
+    width: 534px;
+}
+.airConditioningWiFiKitchenWrapper2 {
+    width: 582px;
+    position: relative;
+    border-radius: 10px 10px 5px 5px;
+    background-color: rgba(246, 246, 246, 0.45);
+    height: 279px;
+    z-index: 0;
+}
+.topBar5 {
+    width: 582px;
+    margin: 0 !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-color: #ff6060;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px 10px 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    color: #fff;
+}
+.statusopenSizemedium {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #000;
+}
+.dropdownOpen {
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    border: 1px dashed #9747ff;
+    box-sizing: border-box;
+    height: 940px;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: left;
+    font-size: 18px;
+    color: #ff6060;
+    font-family: Montserrat;
+}

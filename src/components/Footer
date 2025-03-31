@@ -1,0 +1,19 @@
+import { FunctionComponent } from 'react';
+import styles from './DFooterSet.module.css';
+
+
+const DFooterSet:FunctionComponent = () => {
+  	return (
+    		<div className={styles.dFooter}>
+      			<div className={styles.sizedesktop}>
+        				<img className={styles.logoIcon} alt="" src=".LOGO.svg" />
+        				<div className={styles.kasaAllRights}>© 2020 Kasa. All rights reserved</div>
+      			</div>
+      			<div className={styles.sizemobile}>
+        				<img className={styles.logoIcon1} alt="" src=".LOGO.svg" />
+        				<div className={styles.kasaAllRights1}>© 2020 Kasa. All rights reserved</div>
+      			</div>
+    		</div>);
+};
+
+export default DFooterSet;

@@ -1,0 +1,120 @@
+.logoIcon {
+    position: absolute;
+    height: 100%;
+    width: 16.96%;
+    top: 0%;
+    right: 83.04%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.home {
+    width: 136px;
+    position: relative;
+    text-decoration: underline;
+    line-height: 142.6%;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+.about {
+    width: 116px;
+    position: relative;
+    line-height: 142.6%;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.nav {
+    position: absolute;
+    width: 24.92%;
+    top: calc(50% - 17px);
+    right: 0%;
+    left: 75.08%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 57px;
+}
+.screendesktopActiveaccueil {
+    width: 1240px;
+    position: relative;
+    height: 68px;
+}
+.home1 {
+    width: 136px;
+    position: relative;
+    line-height: 142.6%;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.about1 {
+    width: 116px;
+    position: relative;
+    text-decoration: underline;
+    line-height: 142.6%;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+.logoIcon3 {
+    width: 145px;
+    position: relative;
+    height: 46.9px;
+}
+.home3 {
+    position: relative;
+    text-decoration: underline;
+    line-height: 142.6%;
+    font-weight: 500;
+}
+.about3 {
+    position: relative;
+    line-height: 142.6%;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav3 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 26px;
+}
+.screenmobileActiveaccueil {
+    width: 335px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.header {
+    position: relative;
+    border-radius: 5px;
+    border: 1px dashed #9747ff;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 50px;
+    text-align: right;
+    font-size: 24px;
+    color: #000;
+    font-family: Montserrat;
+}
