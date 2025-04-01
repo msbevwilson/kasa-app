@@ -1,59 +1,25 @@
-import { FunctionComponent, useCallback } from 'react';
-import styles from './HeaderSet.module.css';
+import React from 'react';
+import "../styles/header.scss";
+import Logo from "../images/LOGO.svg";
 
-
-const HeaderSet:FunctionComponent = () => {
-  	
-  	const onAboutTextClick = useCallback(() => {
-    		// Add your code here
-  	}, []);
+export default function Header() {
   	
   	return (
-    		<div className={styles.header}>
-      			<div className={styles.screendesktopActiveaccueil}>
-        				<img className={styles.logoIcon} alt="" src=".LOGO.svg" />
-        				<div className={styles.nav}>
-          					<div className={styles.home}>Home</div>
-          					<div className={styles.about} onClick={onAboutTextClick}>About</div>
-        				</div>
-      			</div>
-      			<div className={styles.screendesktopActiveaccueil}>
-        				<img className={styles.logoIcon} alt="" src=".LOGO.svg" />
-        				<div className={styles.nav}>
-          					<div className={styles.home1} onClick={onAboutTextClick}>Home</div>
-          					<div className={styles.about1}>About</div>
-        				</div>
-      			</div>
-      			<div className={styles.screendesktopActiveaccueil}>
-        				<img className={styles.logoIcon} alt="" src=".LOGO.svg" />
-        				<div className={styles.nav}>
-          					<div className={styles.home1} onClick={onAboutTextClick}>Home</div>
-          					<div className={styles.about} onClick={onAboutTextClick}>About</div>
-        				</div>
-      			</div>
-      			<div className={styles.screenmobileActiveaccueil}>
-        				<img className={styles.logoIcon3} alt="" src=".LOGO.svg" />
-        				<div className={styles.nav3}>
-          					<div className={styles.home3}>Home</div>
-          					<div className={styles.about3} onClick={onAboutTextClick}>About
-</div>
-        				</div>
-      			</div>
-      			<div className={styles.screenmobileActiveaccueil}>
-        				<img className={styles.logoIcon3} alt="" src=".LOGO.svg" />
-        				<div className={styles.nav3}>
-          					<div className={styles.about3} onClick={onAboutTextClick}>Home</div>
-          					<div className={styles.home3}>About</div>
-        				</div>
-      			</div>
-      			<div className={styles.screenmobileActiveaccueil}>
-        				<img className={styles.logoIcon3} alt="" src=".LOGO.svg" />
-        				<div className={styles.nav3}>
-          					<div className={styles.about3} onClick={onAboutTextClick}>Home</div>
-          					<div className={styles.about3} onClick={onAboutTextClick}>About</div>
-        				</div>
-      			</div>
-    		</div>);
-};
-
-export default HeaderSet;
+		<div className="header">
+			<div className="screendesktopActiveaccueil">
+					<img className="logoIcon" alt="" src={Logo} />
+					<div className="nav">
+						<div className="home">Home</div>
+						<div className="about">About</div>
+					</div>
+			</div>
+			{/* <div className="screenmobileActiveaccueil">
+					<img className="logoIcon3" alt="" src=".LOGO.svg" />
+					<div className="nav3">
+						<div className="home3">Home</div>
+						<div className="about3">About</div>
+					</div>
+			</div> */}
+		</div>
+	)
+}

@@ -1,18 +1,13 @@
 import React from 'react';
-import '../../styles/about.scss'
+// import '../../styles/about.scss'
+import Header from '../../components/Header';
  
 export default function DAbout () {
   	return (
 <div className="dAbout">
-<div className="header">
-<img className="logoIcon" alt="" src=".LOGO.svg" />
-<div className="nav">
-<div className="home">Home</div>
-<div className="about">About</div>
-</div>
-</div>
+<Header />
 <div className="body">
-<img className="section1Icon" alt="" src="_Section 1.png" />
+{/* <img className="section1Icon" alt="" src="_Section 1.png" />
 <div className="valeurs">
 <div className="dropdownOpen">
 <div className="airConditioningWiFiKitchenWrapper">
@@ -50,7 +45,7 @@ export default function DAbout () {
 <img className="arrowBackIos24px2Icon" alt="" src="arrow_back_ios-24px 2.png" />
 </div>
 </div>
-</div>
+</div> */}
 </div>
 <div className="dFooter">
 <img className="logoIcon1" alt="" src=".LOGO.svg" />

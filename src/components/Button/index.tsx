@@ -15,7 +15,7 @@ const sizes = {
 } as const;
 
 type ButtonProps = Omit<
-    React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonELement>,
+    React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>,
     "onClick"
 > &
 Partial<{
@@ -41,7 +41,7 @@ const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
 }) => {
     return (
         <button
-            className={`${className}
+            className={`${className}`}
             {...restProps}
         >
             {!! leftIcon && leftIcon} 
