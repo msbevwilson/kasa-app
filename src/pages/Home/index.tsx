@@ -1,25 +1,28 @@
 import React from 'react';
-import '../../styles/home.scss';
+//import '../../styles/home.scss';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
-import PropertyTile from '../../components/PropertyTile';
 import Gallery from '../../components/Gallery';
+import { Container, Row, Col, Image } from 'react-bootstrap';
  
 export default function Home() {
   return (
     <>
-      <div className="dHome">
-      <Header />
-      <div className="body">
-      <Banner />
-      <Gallery />
-        {/* <div className="gallery">
-          <PropertyList />
-        </div> */}
-      </div>
-      <Footer />
-      </div>
+    <Container fluid>
+      <Row>
+          <Header />
+      </Row>
+      <Row>
+          <Banner />
+      </Row>
+      <Row>
+          <Gallery />
+      </Row>
+      <Row>
+          <Footer />
+      </Row>
+    </Container>
     </>
   )
 }

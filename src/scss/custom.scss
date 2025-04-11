@@ -1,0 +1,44 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+.card-img-overlay {
+    position: absolute;
+    top: unset;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: var(--bs-card-img-overlay-padding);
+    border-radius: var(--bs-card-inner-border-radius);
+  }
+  
+  
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    /* color: var(--bs-card-title-color); */
+    color: white;
+}
+.row-cols-md-3 > * {
+    // flex: 0 0 auto;
+    // width: 33.33333333%;
+    padding: 4rem;
+}
+.overlay-dark {
+    border-radius: 25px;
+    background-color: #000;
+    height: 223px;
+    opacity: 0.6;
+    mix-blend-mode: darken; 
+}
+.bannerText {
+        width: 925px;
+        position: relative;
+        font-size: 48px;
+        line-height: 142.6%;
+        display: inline-block;
+        font-family: Montserrat;
+        color: #fff;
+        text-align: center;
+        text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}

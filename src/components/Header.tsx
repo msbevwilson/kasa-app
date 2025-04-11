@@ -13,13 +13,6 @@ export default function Header() {
 						<div className="about">About</div>
 					</div>
 			</div>
-			{/* <div className="screenmobileActiveaccueil">
-					<img className="logoIcon3" alt="" src=".LOGO.svg" />
-					<div className="nav3">
-						<div className="home3">Home</div>
-						<div className="about3">About</div>
-					</div>
-			</div> */}
 		</div>
 	)
 }
