@@ -6,6 +6,7 @@ export default function Gallery() {
     let listItems = properties.slice(0, 6).map((property) => (
         <div className="col" key={property.id}>
             <Card
+                id={property.id}
                 image={property.cover}
                 title={property.title}
                 className="card"

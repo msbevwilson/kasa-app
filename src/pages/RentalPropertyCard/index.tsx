@@ -8,15 +8,13 @@ import { useLocation } from 'react-router-dom';
 
 export default function RentalPropertyCard() {
     let location = useLocation();
-    let { image, title } = location.state || {}; // Destructure the passed state
+    let { id } = location.state || {}; // Destructure the passed state
 
     return (
 		<>
 			<Header />
 			<Carousel 
-				id={properties[0].id}
-				cover={properties[0].cover}
-				title={properties[0].title}	
+				id={id}	
 			/>
 			<Footer />
 		</>
