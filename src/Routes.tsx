@@ -19,7 +19,7 @@ function ProjectRoutes() {
             element: <D404 />,
         },
         {
-            path: "dabout", 
+            path: "about", 
             element: <About />,
         },
     ]);

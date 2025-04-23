@@ -4,25 +4,24 @@ import Header from '../../components/Header';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import Gallery from '../../components/Gallery';
-import { Container, Row, Col, Image } from 'react-bootstrap';
  
 export default function Home() {
   return (
     <>
-    <Container fluid>
-      <Row>
+    <div className="container">
+      <div className="row">
           <Header />
-      </Row>
-      <Row>
+      </div>
+      <div className="row">
           <Banner />
-      </Row>
-      <Row>
+      </div>
+      <div className="row">
           <Gallery />
-      </Row>
-      <Row>
+      </div>
+      <div className="row">
           <Footer />
-      </Row>
-    </Container>
+      </div>
+    </div>
     </>
   )
 }

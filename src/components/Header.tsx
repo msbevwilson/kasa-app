@@ -1,16 +1,15 @@
 import React from 'react';
-import "../styles/header.scss";
 import Logo from "../images/LOGO.svg";
 
 export default function Header() {
   	
   	return (
 		<div className="header">
-			<div className="screendesktopActiveaccueil">
+			<div>
 					<img className="logoIcon" alt="" src={Logo} />
 					<div className="nav">
-						<div className="home">Home</div>
-						<div className="about">About</div>
+						<a href="/" className="home">Home</a>
+						<a href="/about" className="about">About</a>
 					</div>
 			</div>
 		</div>
