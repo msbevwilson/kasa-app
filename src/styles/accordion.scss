@@ -1,10 +1,4 @@
-.about-accordion {
-    width: 100%;
-}
 
-.about-accordion-item {
-    border-bottom: none;
-}
 .about-accordion-item:last-child{
    border-bottom: none;
 }
@@ -62,5 +56,35 @@
 
 .about-accordion-content.open {
     max-height: 500px; /* adjust as needed */
-    width: 1023px;
+    // width: 1023px;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 142.6%;
+/* or 26px */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 20px 20px 20px;
+gap: 10px;
+width: 970px;
+background: rgba(247, 247, 247, 0.45);
+border-radius: 10px 10px 5px 5px;
+
+
+
+
 }

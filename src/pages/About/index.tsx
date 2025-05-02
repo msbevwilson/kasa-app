@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header';
-import Banner from '../../components/Banner';
 import Accordion2 from '../../components/Accordion2';
 import Footer from '../../components/Footer';
+import '../../styles/about.scss';
 
 export default function About() {
 
@@ -30,15 +30,14 @@ export default function About() {
   ];
 
   return (
-    <>
-    <div>
+    <div className='dHome'>
         <div>
             <Header />
         </div>
-        <div>
-            <Banner />
+        <div className='aboutBackground'>
+            <div className='aboutImage' />
         </div>
-        <div>
+        <div className='aboutAccordion'>
             {collapsibleData.map((item, index) => (
                 <Accordion2 key={index} title={item.title} content={item.content} />
             ))}
@@ -47,6 +46,5 @@ export default function About() {
             <Footer />
         </div>
     </div>
-    </>
   ) 
 }
