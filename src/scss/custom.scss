@@ -303,41 +303,46 @@
     overflow-anchor: none;
     transition: var(--bs-accordion-transition);
 }
-.collapsible-button:not(.collapsed) {
-    color: white;
-    background-color: red;
-    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
-}
-.collapsible-button {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-    font-size: 1rem;
-    color: white;
-    text-align: left;
-    background-color: red;
-    border: 0;
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: var(--bs-accordion-transition);
-}
-.collapsible {
-    --bs-collapsible-btn-icon: url("data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2231%22%20viewBox%3D%220%200%2032%2031%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22arrow_back_ios-24px%202%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M11.1931%2010.2642C11.6394%209.81787%2012.3642%209.81787%2012.8104%2010.2642L19.6653%2017.119C20.1116%2017.5653%2020.1116%2018.29%2019.6653%2018.7363C19.219%2019.1826%2018.4943%2019.1826%2018.048%2018.7363L12%2012.6883L5.95203%2018.7327C5.50575%2019.179%204.78099%2019.179%204.33471%2018.7327C3.88843%2018.2865%203.88843%2017.5617%204.33471%2017.1154L11.1896%2010.2606L11.1931%2010.2642Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-    --bs-collapsible-btn-active-icon: url("data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22arrow_back_ios-24px%202%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M20.8069%2021.0195C20.3606%2021.4658%2019.6358%2021.4658%2019.1896%2021.0195L12.3347%2014.1647C11.8884%2013.7184%2011.8884%2012.9937%2012.3347%2012.5474C12.781%2012.1011%2013.5057%2012.1011%2013.952%2012.5474L20%2018.5953L26.048%2012.5509C26.4943%2012.1047%2027.219%2012.1047%2027.6653%2012.5509C28.1116%2012.9972%2028.1116%2013.722%2027.6653%2014.1683L20.8104%2021.0231L20.8069%2021.0195Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-    /* --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; */
-    /* --bs-accordion-btn-icon-transform: rotate(-180deg); */
-    /* --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out; */
+// .collapsible-button:not(.collapsed) {
+//     color: white;
+//     background-color: red;
+//     box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+// }
+// .collapsible-button {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+//     font-size: 1rem;
+//     color: white;
+//     text-align: left;
+//     background-color: red;
+//     border: 0;
+//     border-radius: 0;
+//     overflow-anchor: none;
+//     transition: var(--bs-accordion-transition);
+// }
+// .collapsible {
+//     --bs-collapsible-btn-icon: url("data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2231%22%20viewBox%3D%220%200%2032%2031%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22arrow_back_ios-24px%202%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M11.1931%2010.2642C11.6394%209.81787%2012.3642%209.81787%2012.8104%2010.2642L19.6653%2017.119C20.1116%2017.5653%2020.1116%2018.29%2019.6653%2018.7363C19.219%2019.1826%2018.4943%2019.1826%2018.048%2018.7363L12%2012.6883L5.95203%2018.7327C5.50575%2019.179%204.78099%2019.179%204.33471%2018.7327C3.88843%2018.2865%203.88843%2017.5617%204.33471%2017.1154L11.1896%2010.2606L11.1931%2010.2642Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+//     --bs-collapsible-btn-active-icon: url("data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22arrow_back_ios-24px%202%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M20.8069%2021.0195C20.3606%2021.4658%2019.6358%2021.4658%2019.1896%2021.0195L12.3347%2014.1647C11.8884%2013.7184%2011.8884%2012.9937%2012.3347%2012.5474C12.781%2012.1011%2013.5057%2012.1011%2013.952%2012.5474L20%2018.5953L26.048%2012.5509C26.4943%2012.1047%2027.219%2012.1047%2027.6653%2012.5509C28.1116%2012.9972%2028.1116%2013.722%2027.6653%2014.1683L20.8104%2021.0231L20.8069%2021.0195Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+//     /* --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; */
+//     /* --bs-accordion-btn-icon-transform: rotate(-180deg); */
+//     /* --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out; */
 
-    --bs-collapsible-transition: unset;
-    --bs-collapsible-btn-icon-transform: unset;
-    --bs-collapsible-btn-icon-transition: unset;
-}
+//     --bs-collapsible-transition: unset;
+//     --bs-collapsible-btn-icon-transform: unset;
+//     --bs-collapsible-btn-icon-transition: unset;
+// }
 .accordion {
     --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2231%22%20viewBox%3D%220%200%2032%2031%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22arrow_back_ios-24px%202%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M11.1931%2010.2642C11.6394%209.81787%2012.3642%209.81787%2012.8104%2010.2642L19.6653%2017.119C20.1116%2017.5653%2020.1116%2018.29%2019.6653%2018.7363C19.219%2019.1826%2018.4943%2019.1826%2018.048%2018.7363L12%2012.6883L5.95203%2018.7327C5.50575%2019.179%204.78099%2019.179%204.33471%2018.7327C3.88843%2018.2865%203.88843%2017.5617%204.33471%2017.1154L11.1896%2010.2606L11.1931%2010.2642Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22arrow_back_ios-24px%202%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M20.8069%2021.0195C20.3606%2021.4658%2019.6358%2021.4658%2019.1896%2021.0195L12.3347%2014.1647C11.8884%2013.7184%2011.8884%2012.9937%2012.3347%2012.5474C12.781%2012.1011%2013.5057%2012.1011%2013.952%2012.5474L20%2018.5953L26.048%2012.5509C26.4943%2012.1047%2027.219%2012.1047%2027.6653%2012.5509C28.1116%2012.9972%2028.1116%2013.722%2027.6653%2014.1683L20.8104%2021.0231L20.8069%2021.0195Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-    /* --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; */
+    /* --bs-accordion-transition: 
+    color 0.15s ease-in-out, 
+    background-color 0.15s ease-in-out, 
+    border-color 0.15s ease-in-out, 
+    box-shadow 0.15s ease-in-out, 
+    border-radius 0.15s ease; */
     /* --bs-accordion-btn-icon-transform: rotate(-180deg); */
     /* --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out; */ --bs-accordion-border-color: unset;
 

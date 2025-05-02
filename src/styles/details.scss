@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Equivalent to Bootstrap's col-4 in a 12-column grid */
+    gap: 20px; /* Adjust as needed */
+  }
+.details {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 76px;
+width: 1240px;
+height: 279px;
+}

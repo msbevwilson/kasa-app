@@ -9,10 +9,6 @@ export default function Footer() {
 					<img className="whiteLogoIcon" alt="" src={WhiteLogo} />
 					<div className="kasaAllRights">© 2020 Kasa. All rights reserved</div>
 			  </div>
-			  {/* <div className="sizemobile">
-					<img className="logoIcon1" alt="" src=".LOGO.svg" />
-					<div className="kasaAllRights1">© 2020 Kasa. All rights reserved</div>
-			  </div> */}
 		</div>
 	)
 }

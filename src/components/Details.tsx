@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { properties } from '../utility/data';
 import Description from "./Description";
 import Amenities from "./Amenities";
+import '../styles/details.scss';
 
 interface DetailsProps {
     id: string; // The ID of the property to display
@@ -15,13 +16,13 @@ export default function Details({ id }: DetailsProps) {
     }
 
   	return (
-        <div className="row">
-            <div className="offset-1 col-4">
+        <div className="details">
+            <span>
                 <Description description={property.description} />
-            </div>
-            <div className="offset-1 col-4">
+            </span>
+            <span>
                 <Amenities amenities={property.equipments} />
-            </div>
+            </span>
         </div>
     );
 }

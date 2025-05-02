@@ -1,0 +1,140 @@
+// .about-accordion {
+//     width: 100%;
+// }
+
+// .about-accordion-item {
+//     border-bottom: none;
+// }
+// .about-accordion-item:last-child{
+//    border-bottom: none;
+// }
+
+// .about-accordion-header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     color: white;
+//     background-color: red;
+//     border: none;
+//     cursor: pointer;
+//     width: 100%;
+//     text-align: left;
+//     font-size: 1.1rem;
+//     transition: background-color 0.3s ease;
+// }
+
+// .about-accordion-header.active{
+//     background-color: red;
+// }
+
+.about-caret{
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+.about-caret.rotate{
+    transform: rotate(180deg);
+}
+
+
+// .about-accordion-content {
+//     //padding: 15px;
+//     max-height: 0;
+//     overflow: hidden;
+//     transition: max-height 0.3s ease;
+// }
+
+// .about-accordion-content.open {
+//     max-height: 500px; /* adjust as needed */
+// }
+.about-accordion-content-text {
+    position: absolute;
+    bottom: 176px;
+    left: 20px;
+    line-height: 142.6%;
+    white-space: pre-wrap;
+}
+.about-accordion-content-text.open {
+    max-height: 500px;
+}
+.about-accordion-content {
+    width: 1023px;
+    position: relative;
+    border-radius: 10px 10px 5px 5px;
+    background-color: rgba(246, 246, 246, 0.45);
+    height: 52px;
+    z-index: 0;
+}
+.amenities {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    line-height: 142.6%;
+    display: flex;
+    align-items: center;
+}
+.arrowBackIos24px2Icon {
+    width: 32px;
+    position: relative;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.topBar {
+    width: 1023px;
+    margin: 0 !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-color: #ff6060;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px 10px 15px;
+    box-sizing: border-box;
+    z-index: 1;
+    font-size: 24px;
+    color: #fff;
+}
+// .about-accordion-header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     color: white;
+//     background-color: red;
+//     border: none;
+//     cursor: pointer;
+//     width: 100%;
+//     text-align: left;
+//     font-size: 1.1rem;
+//     transition: background-color 0.3s ease;
+// }
+
+ .topBar.active{
+     background-color: red;
+ }
+.dropdownOpen {
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+.values {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    text-align: left;
+    font-size: 18px;
+    color: #ff6060;
+    font-family: Montserrat;
+}

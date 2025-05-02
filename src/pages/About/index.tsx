@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
-import Collapsible from '../../components/Collapsible';
-import Accordion from '../../components/Accordion';
+import Accordion2 from '../../components/Accordion2';
 import Footer from '../../components/Footer';
 
 export default function About() {
@@ -32,20 +31,19 @@ export default function About() {
 
   return (
     <>
-    <div className="container">
-        <div className="row">
+    <div>
+        <div>
             <Header />
         </div>
-        <div className="row">
+        <div>
             <Banner />
         </div>
-        <div className="row">
-            <Accordion />
+        <div>
             {collapsibleData.map((item, index) => (
-                <Collapsible key={index} title={item.title} children={item.content} />
+                <Accordion2 key={index} title={item.title} content={item.content} />
             ))}
         </div>
-        <div className="row">
+        <div>
             <Footer />
         </div>
     </div>

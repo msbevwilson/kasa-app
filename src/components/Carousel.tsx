@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { properties } from '../utility/data';
 import PrevImage from "../images/BackwardVector.svg";
 import NextImage from "../images/ForwardVector.svg";
+import '../styles/carousel.scss';
 
 interface CarouselProps {
     id: string; // The ID of the property to display
@@ -40,7 +41,7 @@ export default function Carousel({ id }: CarouselProps) {
                         className={`carousel-item ${index === currentIndex ? "active" : ""}`}
                         key={index}
                     >
-                        <img className="d-block w-100" src={picture} alt={`Slide ${index + 1}`} />
+                        <img className="carousel-image" src={picture} alt={`Slide ${index + 1}`} />
                     </div>
                 ))}
             </div>

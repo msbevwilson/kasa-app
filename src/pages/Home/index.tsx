@@ -1,5 +1,5 @@
 import React from 'react';
-//import '../../styles/home.scss';
+import '../../styles/home.scss';
 import Header from '../../components/Header';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
@@ -7,21 +7,17 @@ import Gallery from '../../components/Gallery';
  
 export default function Home() {
   return (
-    <>
-    <div className="container">
-      <div className="row">
+    <div className='dHome'>
+      <div>
           <Header />
       </div>
-      <div className="row">
+      <div className='body'>
           <Banner />
-      </div>
-      <div className="row">
           <Gallery />
       </div>
-      <div className="row">
+      <div>
           <Footer />
       </div>
     </div>
-    </>
   )
 }
