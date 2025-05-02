@@ -14,38 +14,26 @@ export default function ({ amenities }: AmenitiesProps) {
     };
 
     return (
-        // <div className="accordion-item">
-        //     <h2 className="accordion-header">
-        //         <button
-        //             className={`accordion-button ${isOpen ? '' : 'collapsed'}`}
-        //             onClick={toggleAmenities}
-        //         >
-        //             <b>Amenities</b>
-        //         </button>
-        //     </h2>
-        //     <div className={`accordion-collapse ${isOpen ? 'show' : 'collapse'}`}>
-        //         <div className="accordion-body">
-        //             <ul>
-        //                 {amenities.map((amenity, index) => (
-        //                     <li key={index}>{amenity}</li>
-        //                 ))}
-        //             </ul>
-        //             </div>
-        //     </div>
-        // </div>
         <div className="amenities-collapsible">
-                <button className='amenities-collapsible-header'
-                    onClick={toggleAmenities}
+            <button
+                className={`details-accordion-header ${isOpen ? 'active' : ''}`}
+                type="button"
+                onClick={toggleAmenities}
                 >
-                    Amenities
-                </button>
-            {isOpen && <div>
-                    <ul>
-                        {amenities.map((amenity, index) => (
-                            <li key={index}>{amenity}</li>
-                        ))}
-                    </ul>
-                </div>}
+                Amenities
+                <span className={`details-caret ${isOpen ? 'rotate' : ''}`}>
+                    <img src={Caret} alt="caret" />
+                </span>
+            </button>
+            <div 
+                className={`details-accordion-content ${isOpen ? 'open' : ''}`}
+            >
+                {amenities.map((amenity, index) => (
+                    <div style={{ display: "flex" }} key={index}>
+                        {amenity}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };

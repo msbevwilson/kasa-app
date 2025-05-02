@@ -2,7 +2,6 @@ import React from 'react';
 import '../../styles/propertycard.scss';
 import StarActive from  '../../images/StarActive.svg';
 import StarInactive from  '../../images/StarInactive.svg';
-// import '../../styles/rental2.scss';
 import { properties } from '../../utility/data';
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -30,7 +29,7 @@ export default function RentalPropertyCard() {
 
 
     return (
-		<div className='dHome'>
+		<div className='property'>
 			<div>
 				<Header />
 			</div>
@@ -58,9 +57,6 @@ export default function RentalPropertyCard() {
 						</div>
 					</div>
 					<div className='properties2'>
-
-
-
 						<div className='tags'>
 							{tags.map((tag, index) => (
 								<span className='tag' key={index}>

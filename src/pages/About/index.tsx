@@ -30,17 +30,19 @@ export default function About() {
   ];
 
   return (
-    <div className='dHome'>
+    <div className='about'>
         <div>
             <Header />
         </div>
-        <div className='aboutBackground'>
-            <div className='aboutImage' />
-        </div>
-        <div className='aboutAccordion'>
-            {collapsibleData.map((item, index) => (
-                <Accordion2 key={index} title={item.title} content={item.content} />
-            ))}
+        <div className='about-body'>
+            <div className='aboutBackground'>
+                <div className='aboutImage' />
+            </div>
+            <div className='aboutAccordion'>
+                {collapsibleData.map((item, index) => (
+                    <Accordion2 key={index} title={item.title} content={item.content} />
+                ))}
+            </div>
         </div>
         <div>
             <Footer />

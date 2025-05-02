@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/description.scss';
+import "../styles/details.scss";
 import Caret from "../images/arrow_back_ios-24px 2up.svg";
 
 interface DescriptionProps {
@@ -14,27 +15,22 @@ export default function Description({ description }: DescriptionProps) {
     };
 
     return (
-        // <div className="description-collapsible">
-        //     <div className="description-collapsible-item">
-        //         <h2 className="description-collapsible-header">
-        //             <button
-        //                 className={`description-collapsible-button ${isOpen ? '' : 'collapsed'}`}
-        //                 onClick={toggleDescription}
-        //             >
-        //                 <b>Description</b>
-        //             </button>
-        //         </h2>
-        //         <div className={`description-collapsible-collapse ${isOpen ? 'show' : 'collapse'}`}>
-        //             <div className="description-collapsible-body">{description}</div>
-        //         </div>
-        //     </div>
-        // </div>
         <div className="description-collapsible">
-            <button className='description-collapsible-header ' onClick={toggleDescription}>
-                {/* {isOpen ? 'Hide' : 'Show'}  */}
+            <button
+                className={`details-accordion-header ${isOpen ? 'active' : ''}`}
+                type="button"
+                onClick={toggleDescription}
+                >
                 Description
+                <span className={`details-caret ${isOpen ? 'rotate' : ''}`}>
+                    <img src={Caret} alt="caret" />
+                </span>
             </button>
-            {isOpen && <div>{description}</div>}
+            <div 
+                className={`details-accordion-content ${isOpen ? 'open' : ''}`}
+            >
+            {description}
+            </div>
         </div>
     );
 };

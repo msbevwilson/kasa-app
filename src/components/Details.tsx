@@ -17,10 +17,10 @@ export default function Details({ id }: DetailsProps) {
 
   	return (
         <div className="details">
-            <span>
+            <span style={{ display: "flex" }}>
                 <Description description={property.description} />
             </span>
-            <span>
+            <span style={{ display: "flex" }}>
                 <Amenities amenities={property.equipments} />
             </span>
         </div>

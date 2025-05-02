@@ -1,16 +1,24 @@
-.airConditioningWiFi {
-    position: absolute;
-    bottom: 135px;
-    left: 20px;
-    line-height: 142.6%;
-}
-.airConditioningWiFiKitchenWrapper {
-    width: 335px;
+.property {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 0px 0px;
+    gap: 50px;
     position: relative;
+    width: 1440px;
+    background: #FFFFFF;
+}
+.property-card {
+    width: 335px;
+    height: 643px;
     border-radius: 5px;
-    background-color: rgba(246, 246, 246, 0.45);
-    height: 30px;
-    z-index: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
 }
 .amenities {
     align-self: stretch;
@@ -185,7 +193,7 @@
 }
 .property-card-body {
     width: 1240px;
-    height: 643px;
+//    height: 643px;
     border-width: 1px;
     display: flex;
     flex-direction: column;
