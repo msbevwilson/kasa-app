@@ -1,66 +1,136 @@
-.about-accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-    width: 1023px;
-    margin: 0 !important;
-    top: 0px;
-    left: 0px;
-    border-radius: 5px;
-    background-color: #ff6060;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 20px 10px 15px;
-    box-sizing: border-box;
-    z-index: 1;
-    font-size: 24px;
-    color: #fff;
+@media (min-width: 768px) and (max-width: 1440px) {
+    .about-accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+        width: 1023px;
+        margin: 0 !important;
+        top: 0px;
+        left: 0px;
+        border-radius: 5px;
+        background-color: #ff6060;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px 10px 15px;
+        box-sizing: border-box;
+        z-index: 1;
+        font-size: 24px;
+        color: #fff;
+    }
+    .about-accordion-header.active {
+        background-color: #ff6060;
+    }
+    .about-caret {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+    .about-caret.rotate {
+        transform: rotate(180deg);
+    }
+    .about-accordion-content {
+        //padding: 15px;
+        max-height: 0;
+        overflow: hidden;
+        // transition: max-height 0.3s ease;
+    }
+    .about-accordion-content.open {
+        max-height: 500px; /* adjust as needed */
+        // width: 1023px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.6%;
+        /* or 26px */
+        color: #000000;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px 20px 20px;
+        gap: 10px;
+        width: 970px;
+        background: rgba(247, 247, 247, 0.45);
+        border-radius: 10px 10px 5px 5px;
+    }
 }
-.about-accordion-header.active {
-    background-color: #ff6060;
-}
-.about-caret {
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-}
-.about-caret.rotate {
-    transform: rotate(180deg);
-}
-.about-accordion-content {
-    //padding: 15px;
-    max-height: 0;
-    overflow: hidden;
-    // transition: max-height 0.3s ease;
-}
-.about-accordion-content.open {
-    max-height: 500px; /* adjust as needed */
-    // width: 1023px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 142.6%;
-    /* or 26px */
-    color: #000000;
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 20px 20px 20px;
-    gap: 10px;
-    width: 970px;
-    background: rgba(247, 247, 247, 0.45);
-    border-radius: 10px 10px 5px 5px;
+@media (min-width: 320px) and (max-width: 767px) {
+    .about-accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+        //width: 1023px;
+        margin: 0 !important;
+        top: 0px;
+        left: 0px;
+        border-radius: 5px;
+        background-color: #ff6060;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px 10px 15px;
+        box-sizing: border-box;
+        z-index: 1;
+        font-size: 24px;
+        color: #fff;
+    }
+    .about-accordion-header.active {
+        background-color: #ff6060;
+    }
+    .about-caret {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+    .about-caret.rotate {
+        transform: rotate(180deg);
+    }
+    .about-accordion-content {
+        //padding: 15px;
+        max-height: 0;
+        overflow: hidden;
+        // transition: max-height 0.3s ease;
+    }
+    .about-accordion-content.open {
+        max-height: 500px; /* adjust as needed */
+        // width: 1023px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.6%;
+        /* or 26px */
+        color: #000000;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px 20px 20px;
+        gap: 10px;
+        //width: 970px;
+        background: rgba(247, 247, 247, 0.45);
+        border-radius: 10px 10px 5px 5px;
+    }
 }

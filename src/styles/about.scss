@@ -1,46 +1,99 @@
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 45px 0px 0px;
-    gap: 50px;
-    position: relative;
-    width: 1440px;
-    background: #FFFFFF;
+@media (min-width: 768px) and (max-width: 1440px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 45px 0px 0px;
+        gap: 50px;
+        position: relative;
+        width: 1440px;
+        background: #FFFFFF;
+    }
+    .about-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0 0;
+        gap: 38px;
+        position: relative;
+        //width: 1440px;
+        //height: 1042px;
+        background: #ffffff;
+        justify-content: center;
+    }
+    .aboutImage {
+        width: 1240px;
+        background-image: url(../images/AboutImage.svg);
+        background-repeat: no-repeat;
+        //height: 223px;
+    }
+    .aboutBackground {
+        position: relative;
+        border-radius: 25px;
+        background-color: #000;
+        height: 223px;
+        opacity: 0.6;
+        mix-blend-mode: darken;
+    }
+    .aboutAccordion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
-.about-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 0 0;
-    gap: 38px;
-    position: relative;
-    //width: 1440px;
-    //height: 1042px;
-    background: #ffffff;
-    justify-content: center;
-}
-.aboutImage {
-    width: 1240px;
-    background-image: url(../images/AboutImage.svg);
-    background-repeat: no-repeat;
-    max-width: 100%;
-    overflow: hidden;
-    height: 223px;
-    object-fit: cover;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.aboutBackground {
-    position: relative;
-    border-radius: 25px;
-    background-color: #000;
-    height: 223px;
-    opacity: 0.6;
-    mix-blend-mode: darken;
-}
-.aboutAccordion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media (min-width: 320px) and (max-width: 767px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 19px 0px;
+        gap: 19px;
+        
+        position: relative;
+        width: 374px;
+        //height: 623.88px;
+        
+        background: #FFFFFF;
+    }
+    .about-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0 0;
+
+        position: relative;
+        background: #ffffff;
+        justify-content: center;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 19px;
+
+
+
+    }
+    .aboutImage {
+        width: 335px;
+        background-image: url(../images/MAboutImage.svg);
+        background-repeat: no-repeat;
+        // max-width: 100%;
+        // overflow: hidden;
+        height: 111px;
+        object-fit: cover;
+        // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    .aboutBackground {
+        position: relative;
+;
+    }
+    .aboutAccordion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 335px;
+    }
 }

@@ -1,112 +1,185 @@
-
-.background {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    left: 0%;
-    border-radius: 25px;
-    background-color: #f6f6f6;
+@media (min-width: 768px) and (max-width: 1440px) {
+    .background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+        border-radius: 25px;
+        background-color: #f6f6f6;
+    }
+    .img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+        border-radius: 10px;
+        background-color: #ff6060;
+    }
+    .atHomeEverywhere {
+        position: absolute;
+        top: 78px;
+        left: calc(50% - 443px);
+        line-height: 142.6%;
+        text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+    }
+    .section1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        width: 1240px;
+        height: 223px;
+        text-align: center;
+        font-size: 48px;
+    }
+    .body {
+        width: 1240px;
+        height: 1095px;
+    }
+    .logoIcon1 {
+        position: absolute;
+        height: 18.85%;
+        width: 8.47%;
+        top: 31.58%;
+        right: 45.76%;
+        bottom: 49.57%;
+        left: 45.76%;
+        max-width: 100%;
+        overflow: hidden;
+        max-height: 100%;
+    }
+    .kasaAllRights {
+        position: absolute;
+        height: 22.01%;
+        width: 35.63%;
+        top: 64.11%;
+        left: 32.15%;
+        line-height: 142.6%;
+        font-weight: 500;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    // .dFooter {
+    //     width: 1440px;
+    //     position: relative;
+    //     background-color: #000;
+    //     height: 209px;
+    //     overflow: hidden;
+    //     flex-shrink: 0;
+    //     text-align: center;
+    // }
+    .dHome {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 45px 0px 0px;
+        gap: 50px;
+        position: relative;
+        width: 1440px;
+        background: #FFFFFF;
+    }
 }
-.img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    left: 0%;
-    border-radius: 10px;
-    background-color: #ff6060;
+@media (min-width: 320px) and (max-width: 767px) {
+    .background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+        border-radius: 25px;
+        background-color: #f6f6f6;
+    }
+    .img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+        border-radius: 10px;
+        background-color: #ff6060;
+    }
+    .atHomeEverywhere {
+        position: absolute;
+        top: 78px;
+        left: calc(50% - 443px);
+        line-height: 142.6%;
+        text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+    }
+    .section1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        width: 1240px;
+        height: 223px;
+        text-align: center;
+        font-size: 48px;
+    }
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 22px;
+        width: auto;
+        height: auto;
+    }
+    .logoIcon1 {
+        position: absolute;
+        height: 18.85%;
+        width: 8.47%;
+        top: 31.58%;
+        right: 45.76%;
+        bottom: 49.57%;
+        left: 45.76%;
+        max-width: 100%;
+        overflow: hidden;
+        max-height: 100%;
+    }
+    .kasaAllRights {
+        position: absolute;
+        height: 22.01%;
+        width: 35.63%;
+        top: 64.11%;
+        left: 32.15%;
+        line-height: 142.6%;
+        font-weight: 500;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    // .dFooter {
+    //     width: 375px;
+    //     height: 209px;
+    //     background-color: #000;
+    //     height: 209px;
+    //     overflow: hidden;
+    //     flex-shrink: 0;
+    //     text-align: center;
+    // }
+    .dHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px 0px;
+        gap: 27px;
+        position: relative;
+        width: auto;
+        height: auto;
+        //width: 375px;
+        //height: 1267.88px;
+        background: #FFFFFF;
+    }
 }
-.atHomeEverywhere {
-    position: absolute;
-    top: 78px;
-    left: calc(50% - 443px);
-    line-height: 142.6%;
-    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
-}
-.section1 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    width: 1240px;
-    height: 223px;
-    text-align: center;
-    font-size: 48px;
-}
-.body {
-    width: 1240px;
-    //position: relative;
-    height: 1095px;
-    //text-align: left;
-    //font-size: 18px;
-}
-.logoIcon1 {
-    position: absolute;
-    height: 18.85%;
-    width: 8.47%;
-    top: 31.58%;
-    right: 45.76%;
-    bottom: 49.57%;
-    left: 45.76%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.kasaAllRights {
-    position: absolute;
-    height: 22.01%;
-    width: 35.63%;
-    top: 64.11%;
-    left: 32.15%;
-    line-height: 142.6%;
-    font-weight: 500;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.dFooter {
-    width: 1440px;
-    position: relative;
-    background-color: #000;
-    height: 209px;
-    overflow: hidden;
-    flex-shrink: 0;
-    text-align: center;
-}
-.dHome {
-    // position: relative;
-    // background-color: #fff;
-    // width: 100%;
-    // overflow: hidden;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: flex-start;
-    // padding: 45px 0px 0px;
-    // box-sizing: border-box;
-    // gap: 50px;
-    // text-align: right;
-    // font-size: 24px;
-    // color: #fff;
-    // font-family: Montserrat;
-
-    // /* D_Home */
-
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 45px 0px 0px;
-    gap: 50px;
-    position: relative;
-    width: 1440px;
-    height: 1517px;
-    background: #FFFFFF;
-
-}
-
