@@ -1,245 +1,486 @@
-.property {
+@media (min-width: 768px) and (max-width: 1440px) {
+    .property {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 45px 0px 0px;
+        gap: 50px;
+        position: relative;
+        width: 1440px;
+        background: #FFFFFF;
+    }
+    .property-card {
+        width: 335px;
+        height: 643px;
+        border-radius: 5px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+        box-sizing: border-box;
+    }
+    .amenities {
+        align-self: stretch;
+        flex: 1;
+        position: relative;
+        line-height: 142.6%;
+        display: flex;
+        align-items: center;
+    }
+    .arrowBackIos24px2Icon {
+        width: 32px;
+        position: relative;
+        height: 32px;
+        overflow: hidden;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+    .topBar {
+        width: 335px;
+        margin: 0 !important;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 5px;
+        background-color: #ff6060;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 0px 10px 10px;
+        box-sizing: border-box;
+        z-index: 1;
+        font-size: 13px;
+        color: #fff;
+    }
+    .dropdownOpen {
+        width: 335px;
+        border-radius: 5px;
+        height: 30px;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .airConditioning {
+        margin: 0;
+    }
+    .airConditioningWiFiContainer {
+        position: absolute;
+        bottom: 33px;
+        left: 20px;
+        line-height: 142.6%;
+    }
+    .parisCenterOnContainer1 {
+        width: 100%;
+    }
+    .parisCenterOnContainer {
+        position: absolute;
+        height: 63.01%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        line-height: 142.6%;
+        font-weight: 500;
+        display: flex;
+        align-items: flex-end;
+    }
+    .subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        display: flex;
+        color: #000000;
+    }
+    .title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 142.6%;
+        display: flex;
+        color: #FF6060;
+    }
+    .tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        height: 60px;
+    }
+    .tag {
+        display: flex;
+        border-radius: 5px;
+        background-color: #ff6060;
+        border-radius: 10px;
+        width: 160px;
+        height: 25px;
+        color: #fff;
+        padding: 5px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 142.6%;
+        text-align: center;
+        color: #FFFFFF;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .carrouselMIcon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 335px;
+        height: 255px;
+    }
+    .hostImage {
+        border-radius: 50%;
+        background-color: #c4c4c4;
+        width: 64px;
+        height: 64px;
+    }
+    .alexandreDumasTxtContainer {
+        line-break: anywhere;
+        width: 100%;
+    }
+    .host {
+        line-height: 142.6%;
+        font-weight: 500;
+        display: flex;
+        align-items: flex-end;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        color: #FF6060;
+        width: 93px;
+        height: 52px;
+    }
+    .hostParent {
+        position: absolute;
+        top: 387px;
+        left: 199px;
+        width: 135.5px;
+        height: 33px;
+        text-align: right;
+        font-size: 12px;
+    }
+    .rateIcon {
+        position: absolute;
+        height: 3.51%;
+        width: 29.25%;
+        top: 77%;
+        right: 70.75%;
+        bottom: 19.49%;
+        left: 0%;
+        max-width: 100%;
+        overflow: hidden;
+        max-height: 100%;
+    }
+    .property-card-body {
+        width: 1240px;
+    //    height: 643px;
+        border-width: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+    .property-card-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .property-card-host {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .properties1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .properties2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .star {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 45px 0px 0px;
-    gap: 50px;
-    position: relative;
-    width: 1440px;
-    background: #FFFFFF;
-}
-.property-card {
-    width: 335px;
-    height: 643px;
-    border-radius: 5px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 0px 0px 0px;
-    box-sizing: border-box;
-}
-.amenities {
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-    line-height: 142.6%;
-    display: flex;
-    align-items: center;
-}
-.arrowBackIos24px2Icon {
-    width: 32px;
-    position: relative;
-    height: 32px;
-    overflow: hidden;
-    flex-shrink: 0;
-    object-fit: contain;
-}
-.topBar {
-    width: 335px;
-    margin: 0 !important;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 5px;
-    background-color: #ff6060;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 0px 10px 10px;
-    box-sizing: border-box;
-    z-index: 1;
-    font-size: 13px;
-    color: #fff;
-}
-.dropdownOpen {
-    width: 335px;
-    border-radius: 5px;
-    height: 30px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-}
-.airConditioning {
-    margin: 0;
-}
-.airConditioningWiFiContainer {
-    position: absolute;
-    bottom: 33px;
-    left: 20px;
-    line-height: 142.6%;
-}
-.parisCenterOnContainer1 {
-    width: 100%;
-}
-.parisCenterOnContainer {
-    position: absolute;
-    height: 63.01%;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    line-height: 142.6%;
-    font-weight: 500;
-    display: flex;
-    align-items: flex-end;
-}
-.subtitle {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 142.6%;
-    display: flex;
-    color: #000000;
-}
-.title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 142.6%;
-    display: flex;
-    color: #FF6060;
-}
-.tags {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-    height: 60px;
-}
-.tag {
-    display: flex;
-    border-radius: 5px;
-    background-color: #ff6060;
-    border-radius: 10px;
-    width: 160px;
-    height: 25px;
-    color: #fff;
-    padding: 5px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 142.6%;
-    text-align: center;
-    color: #FFFFFF;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-.carrouselMIcon {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 335px;
-    height: 255px;
-}
-.hostImage {
-    border-radius: 50%;
-    background-color: #c4c4c4;
-    width: 64px;
-    height: 64px;
-}
-.alexandreDumasTxtContainer {
-    line-break: anywhere;
-    width: 100%;
-}
-.host {
-    line-height: 142.6%;
-    font-weight: 500;
-    display: flex;
-    align-items: flex-end;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 142.6%;
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    color: #FF6060;
-    width: 93px;
-    height: 52px;
-}
-.hostParent {
-    position: absolute;
-    top: 387px;
-    left: 199px;
-    width: 135.5px;
-    height: 33px;
-    text-align: right;
-    font-size: 12px;
-}
-.rateIcon {
-    position: absolute;
-    height: 3.51%;
-    width: 29.25%;
-    top: 77%;
-    right: 70.75%;
-    bottom: 19.49%;
-    left: 0%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.property-card-body {
-    width: 1240px;
-//    height: 643px;
-    border-width: 1px;
-    display: flex;
-    flex-direction: column;
-}
-.property-card-title {
-    display: flex;
-    flex-direction: column;
-}
-.property-card-host {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.properties1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.properties2 {
-    display: flex;
-    flex-direction: row;
-}
-.rating {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.star {
-display: flex;
-width: 36px;
-height: 36px;
+    width: 36px;
+    height: 36px;
 
-}
+    }
 
-.starIcon {
-    display: flex;;
-    width: 24px;
-    height: 24px;
-}
+    .starIcon {
+        display: flex;;
+        width: 24px;
+        height: 24px;
+    }
 
-.logoIcon1 {
-    position: absolute;
-    top: 66px;
-    left: calc(50% - 60.5px);
-    width: 122px;
-    height: 39.4px;
+    .logoIcon1 {
+        position: absolute;
+        top: 66px;
+        left: calc(50% - 60.5px);
+        width: 122px;
+        height: 39.4px;
+    }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+    .property {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px 0px;
+        gap: 27px;
+        
+        position: relative;
+        //width: 375px;
 
+        max-height: 1145px;
+        
+        background: #FFFFFF;
+    }
+    .property-card {
+        width: 335px;
+        height: 643px;
+        border-radius: 5px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+        box-sizing: border-box;
+    }
+    .amenities {
+        align-self: stretch;
+        flex: 1;
+        position: relative;
+        line-height: 142.6%;
+        display: flex;
+        align-items: center;
+    }
+    .arrowBackIos24px2Icon {
+        width: 32px;
+        position: relative;
+        height: 32px;
+        overflow: hidden;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+    .topBar {
+        width: 335px;
+        margin: 0 !important;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 5px;
+        background-color: #ff6060;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 0px 10px 10px;
+        box-sizing: border-box;
+        z-index: 1;
+        font-size: 13px;
+        color: #fff;
+    }
+    .dropdownOpen {
+        width: 335px;
+        border-radius: 5px;
+        height: 30px;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .airConditioning {
+        margin: 0;
+    }
+    .airConditioningWiFiContainer {
+        position: absolute;
+        bottom: 33px;
+        left: 20px;
+        line-height: 142.6%;
+    }
+    .parisCenterOnContainer1 {
+        width: 100%;
+    }
+    .parisCenterOnContainer {
+        position: absolute;
+        height: 63.01%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        line-height: 142.6%;
+        font-weight: 500;
+        display: flex;
+        align-items: flex-end;
+    }
+    .subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 142.6%;
+        display: flex;
+        color: #000000;
+    }
+    .title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        display: flex;
+        color: #FF6060;
+    }
+    .tags {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        //height: 60px;
+    }
+    .tag {
+        display: flex;
+        border-radius: 5px;
+        background-color: #ff6060;
+        border-radius: 10px;
+        width: 84px;
+        height: 18px;
+        color: #fff;
+        padding: 5px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 142.6%;
+        text-align: center;
+        color: #FFFFFF;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .carrouselMIcon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 335px;
+        height: 255px;
+    }
+    .hostImage {
+        border-radius: 50%;
+        background-color: #c4c4c4;
+        width: 32px;
+        height: 32px;
+    }
+    .alexandreDumasTxtContainer {
+        line-break: anywhere;
+        width: 100%;
+    }
+    .host {
+        align-items: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+        display: flex;
+        text-align: right;
+        color: #FF6060;
+        width: 93px;
+        height: 33px;
+        flex-direction: column;
+    }
+    .hostParent {
+        position: absolute;
+        top: 387px;
+        left: 199px;
+        width: 135.5px;
+        height: 33px;
+        text-align: right;
+        font-size: 12px;
+    }
+    .rateIcon {
+        position: absolute;
+        height: 3.51%;
+        width: 29.25%;
+        top: 77%;
+        right: 70.75%;
+        bottom: 19.49%;
+        left: 0%;
+        max-width: 100%;
+        overflow: hidden;
+        max-height: 100%;
+    }
+    .property-card-body {
+        width: 335px;
+        border-width: 1px;
+        display: flex;
+        flex-direction: column;
+        min-height: 515px;
+        justify-content: space-between;
+    }
+    .property-card-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .property-card-host {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 98px;
+        height: 18px;
+    }
+    .star {
+        display: flex;
+        width: 13.41px;
+        height: 13px;
+
+    }
+
+    .starIcon {
+        display: flex;;
+        width: 24px;
+        height: 24px;
+    }
+
+    .logoIcon1 {
+        position: absolute;
+        top: 66px;
+        left: calc(50% - 60.5px);
+        width: 122px;
+        height: 39.4px;
+    }
+}

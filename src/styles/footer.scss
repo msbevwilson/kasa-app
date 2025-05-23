@@ -77,12 +77,6 @@
         
         color: #FFFFFF;
     }
-    .sizedesktop {
-        width: 100%;
-        position: relative;
-        background-color: #000;
-        height: 209px;
-    }
     .sizemobile {
         width: 100%;
         position: relative;
@@ -90,6 +84,7 @@
         height: 209px;
     }
     .dFooter {
+        display: flex;
         width: 375px;
         height: 209px;
 

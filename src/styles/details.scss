@@ -1,80 +1,123 @@
-.grid-container {
+@media (min-width: 768px) and (max-width: 1440px) {
+  .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Equivalent to Bootstrap's col-4 in a 12-column grid */
     gap: 20px; /* Adjust as needed */
   }
-.details {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 76px;
-  width: 1240px;
-  height: 279px;
+  .details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 76px;
+    width: 1240px;
+    height: 279px;
+  }
+  .details-accordion-header {
+    justify-content: space-between;
+    border: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    background-color: #ff6060;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 15px;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #fff;
+    width: 582px;
+  }
+  .details-accordion-header.active {
+    background-color: #ff6060;
+    width: 582px;
+  }
+  .details-caret {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  .details-caret.rotate {
+    transform: rotate(180deg);
+  }
+  .details-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+  }
+  .details-accordion-content.open {
+    max-height: 500px; /* adjust as needed */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 142.6%;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    align-items: flex-start;
+    padding: 20px 20px 20px;
+    background: rgba(247, 247, 247, 0.45);
+    border-radius: 10px 10px 5px 5px;
+    width: 548px;
+  }
 }
-.details-accordion-header {
-  // display: flex;
-  justify-content: space-between;
-  // align-items: center;
-  // color: white;
-  border: none;
-  // cursor: pointer;
-  // text-align: left;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
-  // margin: 0 !important;
-  // top: 0px;
-  // left: 0px;
-  border-radius: 5px;
-  background-color: #ff6060;
-  // overflow: hidden;
-  display: flex;
-  // flex-direction: row;
-  align-items: center;
-  padding: 10px 20px 10px 15px;
-  box-sizing: border-box;
-  // z-index: 1;
-  font-size: 24px;
-  color: #fff;
-  width: 582px;
-}
-.details-accordion-header.active {
-  background-color: #ff6060;
-  width: 582px;
-}
-.details-caret {
-  font-size: 1.5rem;
-  transition: transform 0.3s ease;
-}
-.details-caret.rotate {
-  transform: rotate(180deg);
-}
-.details-accordion-content {
-  //padding: 15px;
-  max-height: 0;
-  overflow: hidden;
-  // transition: max-height 0.3s ease;
-}
-.details-accordion-content.open {
-  max-height: 500px; /* adjust as needed */
-  // width: 1023px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 142.6%;
-  /* or 26px */
-  color: #000000;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-  //display: flex;
-  //flex-direction: row;
-  align-items: flex-start;
-  padding: 20px 20px 20px;
-  //gap: 10px;
-  background: rgba(247, 247, 247, 0.45);
-  border-radius: 10px 10px 5px 5px;
-  width: 548px;
+@media (min-width: 320px) and (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Equivalent to Bootstrap's col-4 in a 12-column grid */
+    gap: 20px; /* Adjust as needed */
+  }
+  .details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 76px;
+  }
+  .details-accordion-header {
+    justify-content: space-between;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    background-color: #ff6060;
+    display: flex;
+    align-items: center;
+    //padding: 10px 0px 10px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    width: 335px;
+  }
+  .details-accordion-header.active {
+    background-color: #ff6060;
+    width: 335px;
+  }
+  .details-caret {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  .details-caret.rotate {
+    transform: rotate(180deg);
+  }
+  .details-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+  }
+  .details-accordion-content.open {
+    max-height: 500px; /* adjust as needed */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 142.6%;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    align-items: flex-start;
+    padding: 20px 20px 20px;
+    background: rgba(247, 247, 247, 0.45);
+    border-radius: 10px 10px 5px 5px;
+  }
 }
