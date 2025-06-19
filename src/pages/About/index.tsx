@@ -31,9 +31,7 @@ export default function About() {
 
   return (
     <div className='about'>
-        <div>
-            <Header />
-        </div>
+        <Header />
         <div className='about-body'>
             <div className='aboutBackground'>
                 <div className='aboutImage' />
@@ -44,9 +42,7 @@ export default function About() {
                 ))}
             </div>
         </div>
-        <div>
-            <Footer />
-        </div>
+        <Footer />
     </div>
   ) 
 }

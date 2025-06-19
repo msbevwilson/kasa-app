@@ -7,9 +7,7 @@ export default function NotFound() {
 
     return (
         <div className="not-found">
-            <div>
                 <Header />
-            </div>
             <div className="not-found-body">
                 <div className="error-404">404</div>
                 <div className="oopsThePage">Oops! The page you’re looking for doesn’t exist.</div>
@@ -17,9 +15,7 @@ export default function NotFound() {
                     <a href="/">Return to home page</a>
                 </div>
             </div>
-            <div>
                 <Footer />
-            </div>
         </div>
         
     );

@@ -8,16 +8,12 @@ import Gallery from '../../components/Gallery';
 export default function Home() {
   return (
     <div className='dHome'>
-      {/* <div> */}
-          <Header />
-      {/* </div> */}
+      <Header />
       <div className='body'>
           <Banner />
           <Gallery />
       </div>
-      {/* <div> */}
           <Footer />
-      {/* </div> */}
     </div>
   )
 }

@@ -15,10 +15,6 @@ function ProjectRoutes() {
             element: <RentalPropertyCard />,
         },
         {
-            path: "d404",
-            element: <D404 />,
-        },
-        {
             path: "about", 
             element: <About />,
         },

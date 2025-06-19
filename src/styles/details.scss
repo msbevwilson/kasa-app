@@ -11,7 +11,7 @@
     padding: 0px;
     gap: 76px;
     width: 1240px;
-    height: 279px;
+    max-height: 279px;
   }
   .details-accordion-header {
     justify-content: space-between;
@@ -59,6 +59,11 @@
     background: rgba(247, 247, 247, 0.45);
     border-radius: 10px 10px 5px 5px;
     width: 548px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {

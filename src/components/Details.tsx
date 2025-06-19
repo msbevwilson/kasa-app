@@ -23,14 +23,11 @@ export default function Details({ id }: DetailsProps) {
         flexDirection: "column",
         maxHeight: "382px",
         minHeight: "100px",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        gap: "20px"
     }}>
-            <div style={{ display: "flex" }}>
                 <Description description={property.description} />
-            </div>
-            <div style={{ display: "flex" }}>
                 <Amenities amenities={property.equipments} />
-            </div>
         </div>
     ) : (
         <div className="details">
